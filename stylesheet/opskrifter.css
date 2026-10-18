@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    font-size: 25px; 
+    align-items: flex-end;
+}
+
+.search-recipes{
+    display: flex;
+    width:90%;
+    height: auto;
+}
+
+.search{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.recipes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.recipes > div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #F7FCFD;
+    border-radius: 20px;
+    border-color: #438233;
+    border-width: 2px;
+    border-style: solid;
+    gap: 10px;
+}
+
+.recipes img{
+    margin-left: 20px;
+    width: 25%;
+    height: 75%;
+    border-radius: 20px;
+}
+
+.hurtig p, .hurtig button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.hurtig{
+
+
+}
+
+.nem{
+
+}
+
+.mættende{
+
+}
+
+.dessert{
+
+}
