@@ -1,30 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
+
 
 .header{
     display: flex;
     font-size: 25px; 
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: 68%;
+
 }
 
 .search-recipes{
     display: flex;
-    width:90%;
-    height: auto;
+    margin-left: 20px;
+    width:70%;
+    height: 20px;
 }
+
+.forslag{
+    display: flex;
+    font-size: 20px; 
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
 
 .search{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+
 }
 
 .recipes{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     width: 100%;
     height: auto;
@@ -33,7 +55,7 @@ body{
 .recipes > div{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 150px;
     background-color: #F7FCFD;
     border-radius: 20px;
@@ -43,33 +65,46 @@ body{
     gap: 10px;
 }
 
+.ret{
+    color: #438233;
+}
+
+
+.gul{
+    color: #FF9604;
+}
+
+.rød{
+    color: #F02B2A;
+}
+
 .recipes img{
     margin-left: 20px;
-    width: 25%;
-    height: 75%;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
 }
 
-.hurtig p, .hurtig button{
+.recipes button{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: auto;
+    height: 40px;
+    background-color: #438233;
+    border-color: #FF9604;
+    border-radius: 20px;
+    color: #F7FCFD;
 }
 
-.hurtig{
-
-
-}
-
-.nem{
-
-}
-
-.mættende{
-
-}
-
-.dessert{
-
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #438233;
+    color: #F7FCFD;
 }
