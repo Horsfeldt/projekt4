@@ -2,6 +2,9 @@ const madvarer = document.querySelectorAll(
     ".madvarer1, .madvarer2, .madvarer3, .madvarer4"
 );
 
+const vareantal = document.querySelector(".vareantal")
+let samletantal = 0;
+
 madvarer.forEach(function(madvare) {
 
 let count=0;
@@ -18,16 +21,23 @@ buttons.forEach(function(button){
 
         if (styles.contains("plus")){
             count++;
+            samletantal++;
         }
         else if (styles.contains("minus")){
-            count--;
+            if (count > 0) {
+        count--;
+        samletAntal--;
+    }
         }  
         else{
+            samletantal -= count;
             count=0;
         }
 
         value.textContent=count; 
+        vareantal.textContent = samletantal;
 
      });
 });
 });
+
