@@ -13,8 +13,10 @@ body{
 hr{
     width: 100%;
     height: 1px;
+    margin-bottom: 20px;
     background-color: black;
 }
+
 
 .kurv{
     display: flex;
@@ -35,6 +37,7 @@ hr{
     height: auto;
 }
 
+
 .madvarer > div{
     display: flex;
     align-items: center;
@@ -46,6 +49,25 @@ hr{
     border-width: 2px;
     border-style: solid;
     gap: 10px;
+}
+
+.madvarer h3{
+    width: 60px;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.btn.slet {
+    margin-left: 95px;
+    background-color: #F02B2A;
+    color: #F7FCFD;
+}
+
+
+.produkt{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .madvarer img{
@@ -70,6 +92,15 @@ hr{
 .btn.minus{
     background-color: #F7FCFD;
     font-size: 20px;
+}
+
+.gratis{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF9604;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
 }
 
 .total{
@@ -118,4 +149,23 @@ hr{
 .vareantal{
     display: flex;
     justify-content: flex-end;
+}
+
+.bestillingsstatus{
+    color: red;
+}
+
+.bestil{
+    display: flex;
+    justify-content: center;
+}
+
+.bestilbtn{
+    background-color: #438233;
+    border-color: #FF9604;
+    color: #F7FCFD;
+    font-size: 20px;
+    width: 135px;
+    height: 40px;
+    border-radius: 25px;
 }

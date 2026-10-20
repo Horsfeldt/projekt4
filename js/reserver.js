@@ -5,6 +5,8 @@ const madvarer = document.querySelectorAll(
 const vareantal = document.querySelector(".vareantal")
 let samletantal = 0;
 
+const bestillingsstatus = document.querySelector(".bestillingsstatus")
+
 madvarer.forEach(function(madvare) {
 
 let count=0;
@@ -26,13 +28,22 @@ buttons.forEach(function(button){
         else if (styles.contains("minus")){
             if (count > 0) {
         count--;
-        samletAntal--;
+        samletantal--;
     }
         }  
         else{
             samletantal -= count;
             count=0;
         }
+
+        if (samletantal > 0) {
+             bestillingsstatus.style.color = "green";
+             bestillingsstatus.textContent = "Klar til bestilling";
+        } else {
+            bestillingsstatus.style.color = "red";
+            bestillingsstatus.textContent = "Ikke klar til bestilling";
+        }
+
 
         value.textContent=count; 
         vareantal.textContent = samletantal;
