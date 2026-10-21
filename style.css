@@ -1,6 +1,6 @@
 body{
     max-width: 430px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     background-color: #FAEFC6;
 }
@@ -469,3 +469,189 @@ p {
     border-right: 1px solid #000000;
   
 }
+
+
+.opskrift-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  
+}
+
+
+.opskrift-header{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+   
+}
+
+
+.tilbage-pil{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+
+.opskrift-info{
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.opskrift-titel{
+    margin: 0;
+    font-size: 26px;
+    margin-top: 4px;
+
+
+}
+
+
+.detalje{
+ display: inline-flex;
+ align-items: center;
+ gap: 5px;
+ margin-top: 8px;
+ margin-left: 2px;
+    
+}
+
+.detalje p{
+    margin: 0;
+}
+
+.detalje img{
+    border-radius: 30px;
+}
+
+.opskrift-billede{
+    width: 100%;
+}
+
+
+.rating{
+    display:flex;
+    justify-content: center;
+
+}
+
+.antal-bedømmelser{
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+.sociale-funktioner{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+   
+}
+
+.funktion{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.funktion p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.funktion-ikon3{
+    margin-top: -2px;
+}
+
+.streg{
+    width: 100%;
+    height: 1px;
+    background-color: #E0D7B3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.ingredienser{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+
+.ingredienser h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+.ingrediens{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.ingrediens p{
+    margin: 0;
+    font-size: 18px;
+}
+
+
+.fremgangsmåde h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 5px;
+  
+}
+
+
+.fremgangsmåde{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+
+.fremgangsmåde-punkt{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5px;
+  
+}
+
+.fremgangsmåde img{
+    width: 22px;
+}
+
+.fremgangsmåde-punkt p{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin-top: -3px;
+}
+
+.gem-btn{
+    width: 135px;
+    height: 35px;
+    background-color: #438233;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #FAEFC6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 20px;
+   
+}
+
