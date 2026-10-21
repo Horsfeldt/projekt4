@@ -105,17 +105,40 @@ footer {
   font-size: 28px;
 }
 
-footer span {
-  display: flex;
+footer .footer-item {
   flex: 1;
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-right: 1px solid #000;
 }
 
-footer span:last-child {
+footer .footer-item:last-child {
   border-right: none;
+}
+
+footer img {
+  width: auto;
+  height: 36px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+footer .footer-item:nth-child(1) img {
+  transform: scale(1.667);
+}
+
+footer .footer-item:nth-child(2) img {
+  transform: scale(1.108);
+}
+
+footer .footer-item:nth-child(3) img {
+  transform: scale(0.814);
+}
+
+footer .footer-item:nth-child(4) img {
+  transform: scale(0.909);
 }
 
 /* --------- RESPONSIVITET --------- */
