@@ -1,0 +1,189 @@
+/* --------- BASIS --------- */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #faefc6;
+  margin: 0;
+  padding-bottom: 90px;
+}
+
+header {
+  background-color: #faefc6;
+  text-align: center;
+  padding: 10px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+h1 {
+  margin: 5px 0 10px 0;
+  font-size: 22px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.profile {
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #f4d9a9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+input[type="text"] {
+  width: 85%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.post {
+  background-color: #fff;
+  border: 2px solid #438233;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.user {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 76px;
+  box-sizing: border-box;
+  background-color: #438233;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
+}
+
+footer span {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+}
+
+footer span:last-child {
+  border-right: none;
+}
+
+
+/* --------- RESPONSIVITET (MOBIL) --------- */
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .top-bar {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .profile {
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 9px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  .post {
+    margin: 10px;
+    padding: 8px;
+  }
+
+  .post img {
+    border-radius: 6px;
+  }
+
+  .actions button {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 26px;
+  }
+}
+
+
+/* --------- LIDT STØRRE MOBIL (iPhone 12–15) --------- */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .profile {
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 11px;
+  }
+
+  input[type="text"] {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .post {
+    margin: 18px;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 28px;
+  }
+}
