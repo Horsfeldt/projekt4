@@ -1,0 +1,471 @@
+body{
+    max-width: 430px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #FAEFC6;
+}
+
+
+.statusbar{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 30px;
+}
+
+
+.tid{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.dynamic-island{
+    width: 130px;
+    height: 35px;
+    background-color: #000000;
+    border-radius: 30px;
+    margin-top: 8px;
+    display: flex;
+    align-self: center;   
+}
+
+
+.status-ikoner{
+    display: flex;
+    gap: 5px;
+    width: 18px;
+    margin-left: -25px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.delmad-logo{
+    width: 130px;
+    margin-top: 75px;
+}
+
+
+
+h1{
+    font-size: 26px;
+    font-family: 'Open Sans';
+    margin-bottom: auto;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
+
+.input-felter{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   margin-top: 20px;
+   align-items: center;
+}
+
+
+.input-felter label{
+    margin-bottom: auto;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 14px;
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+
+.input-felter input{
+    width: 100%;
+    max-width:350px;
+    height: 45px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+
+.knapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    transition: all 0.20s ease;
+}
+
+
+.logind-btn{
+    width: 135px;
+    height: 35px;
+    background-color: #438233;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #FAEFC6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.opret-btn{
+    width: 135px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #438233;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.opret-tekst{
+    text-align: center;
+}
+
+
+.bruger-felter{
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   align-items: center;
+}
+
+
+.bruger-felter label{
+    margin-left: 22px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 500;
+    gap: 4px;
+    align-self: flex-start;
+}
+
+.bruger-felter input{
+    width: 100%;
+    max-width:350px;
+    font-size: 14px;
+    height: 45px;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    gap: 4px;
+}
+
+.checkbox{
+    display: flex;
+    white-space: nowrap;
+    align-self: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    gap: 5px;  
+}
+
+
+.checkbox label{
+    align-self: center;
+    margin-left: 0;
+    font-family: 'Open Sans';
+}
+
+.opret-btn2{
+    width: 135px;
+    height: 35px;
+    background-color: #438233;
+    border: 2px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #FAEFC6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer; 
+}
+
+
+.har-bruger{
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+.logind-link{
+    color: #438233;
+    font-weight: 500;
+}
+
+
+.profil-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.billede-navn{
+    display: flex;
+    white-space: nowrap;
+    align-self: flex-start;
+    gap: 12px;
+}
+
+.profil-billede{
+    width: 60px;
+    margin-top: 10px;
+    margin-left: -8px;
+ 
+}
+
+.profil-navn{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #438233;
+    font-family: 'Open Sans';
+ 
+
+}
+.profil-info{
+    display: flex;
+    white-space: nowrap;
+    margin-top: -45px;
+    gap: 14px;
+    margin-left: 45px;
+
+}
+
+.info-boks{
+    text-align: center;
+}
+
+
+.info-tal{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 2px;
+    font-family: 'Open Sans';
+  
+}
+
+.info-tekst{
+    font-size: 16px;
+    margin-top: -6px;
+    font-family:'Open Sans';
+    font-weight: 500;
+  
+}
+
+.medlem-siden{
+    font-size: 12px;
+    font-family: 'Open Sans';
+    align-self: flex-start;
+    margin-left: 14px;
+    
+}
+
+
+.profil-knapper{
+    display: flex;
+    gap: 55px;
+}
+
+.rediger-btn{
+    width: 138px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #438233;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.del-btn{
+    width: 135px;
+    height: 35px;
+    background-color: #438233;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #FAEFC6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.ommig-boks{
+    width: 325px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 3px solid #438233;
+    border-radius: 18px;
+    margin-top: 16px;
+    line-height: 1.5;
+
+
+}
+
+
+.ommig-boks h2{
+    font-size: 14px;
+    font-family: 'Open Sans';
+    margin-left: 8px;
+    font-weight: 600;
+    margin-top: 5px;
+
+
+    
+}
+
+.ommig-tekst{
+    font-size: 12px;
+    font-family: 'Open Sans';
+    margin-left: 8px;
+    margin-top: -4px;
+
+}
+
+
+.retter-overskrift{
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+
+.retter-container{
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    margin-top: 15px;
+
+}
+
+.ret-billede{
+    width: 110px;
+    height: 170px;
+    background-color: #ffffff;
+    border: 2px solid #438233;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+  
+   
+}
+
+.ret-navn{
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    color: #438233;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.ret1{
+    width: 70px;
+    height: 80px;
+    background-color: #ffffff;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 10px;
+
+  
+}
+
+.ret2{
+    width: 75px;
+    height: 90px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.ret3{
+    width: 70px;
+    height: 80px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.opskrift-btn{
+    width: 90px;
+    height: 25px;
+    background-color: #438233;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: auto;
+
+  
+}
+
+.favorit-btn{
+    width: 135px;
+    height: 35px;
+    background-color: #438233;
+    border: 3px solid #FF9604;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    color: #FAEFC6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+.bundmenu{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #438233; 
+    
+}
+
+
+.menu-punkt{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #000000;
+  
+}
