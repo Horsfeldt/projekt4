@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/index.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
+
 <body>
+
+
+    <div class="statusbar">
+
+    <p class="tid">09:41</p>
+
+    <div class="dynamic-island"></div>
+
+    <div class="status-ikoner">
+
+        <img src="img/forbindelse-ikon.png">
+        <img src="img/wifi-ikon.png">
+        <img src="img/batteri-ikon.png">
+    </div>
+
+    </div>
+
+
+
+    <div class="container">
+
+
+
+    <img src="img/delmad-logo.png" class="delmad-logo">
+  
+  
+        <h1>Velkommen</h1>
+        <p>Log ind og kom igang med at reducere madspild</p>
+     
+    </div>
+
+  
+        <div class="input-felter">
+         <label for="email">E-mail</label>
+         <input type="email" id="email" placeholder="Indtast din e-mail" autocomplete="email">
+         <label for="password">Adgangskode</label>
+         <input type="password" id="password" placeholder="Indtast din adgangskode" autocomplete="current-password">
+          
+         
+         <div class="knapper">
+         <button class="logind-btn" onclick="login()">Log ind</button>
+        <button class="opret-btn" onclick="goToOpret()">Opret bruger</button>
+        
+        </div>
+        </div>
+    
     
 </body>
 </html>
