@@ -188,6 +188,7 @@ p {
     white-space: nowrap;
     align-self: flex-start;
     gap: 12px;
+    margin-left: 10px;
 }
 
 .profil-billede{
