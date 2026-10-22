@@ -1,0 +1,283 @@
+/* --------- BASIS --------- */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #faefc6;
+  margin: 0;
+  padding-bottom: 90px;
+}
+
+
+
+
+.statusbar{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 30px;
+}
+
+
+.tid{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.dynamic-island{
+    width: 130px;
+    height: 35px;
+    background-color: #000000;
+    border-radius: 30px;
+    margin-top: 8px;
+    display: flex;
+    align-self: center;   
+}
+
+
+.status-ikoner{
+    display: flex;
+    gap: 5px;
+    width: 18px;
+    margin-left: -25px;
+}
+
+
+
+
+
+.feed-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.feed-header h1 {
+  font-size: 22px;
+  margin: 0;
+  margin-left: 35px;
+}
+
+.header-ikoner{
+   margin-right: 20px;
+}
+
+.header-ikon{
+  width: 22px;
+}
+
+.header-ikon1{
+margin-left: 25px;
+}
+
+
+.profile-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  gap: 12px;
+}
+ 
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img{
+  width: 45px;
+  border-radius: 50%;
+ 
+}
+
+.profile p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+.søg-feed{
+  font-size: 12px;
+  margin-left: 16px;
+  color: #626A5E;
+}
+
+input[type="text"] {
+  width: 92%;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  margin-left: 16px;
+  margin-top: -5px;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.post {
+  background-color: #fff;
+  border: 2px solid #438233;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+}
+
+.user {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 76px;
+  box-sizing: border-box;
+  background-color: #438233;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
+}
+
+footer .footer-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+}
+
+footer .footer-item:last-child {
+  border-right: none;
+}
+
+footer img {
+  width: auto;
+  height: 36px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+footer .footer-item:nth-child(1) img {
+  transform: scale(1.667);
+}
+
+footer .footer-item:nth-child(2) img {
+  transform: scale(1.108);
+}
+
+footer .footer-item:nth-child(3) img {
+  transform: scale(0.814);
+}
+
+footer .footer-item:nth-child(4) img {
+  transform: scale(0.909);
+}
+
+
+/* --------- RESPONSIVITET (MOBIL) --------- */
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .top-bar {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .profile {
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 9px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  .post {
+    margin: 10px;
+    padding: 8px;
+  }
+
+  .post img {
+    height: 180px;
+    border-radius: 6px;
+  }
+
+
+  .actions button {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 26px;
+  }
+}
+
+
+/* --------- LIDT STØRRE MOBIL (iPhone 12–15) --------- */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .profile {
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 11px;
+  }
+
+  input[type="text"] {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .post {
+    margin: 18px;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 28px;
+  }
+}
