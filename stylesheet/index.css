@@ -19,6 +19,40 @@ body {
 }
 
 
+.statusbar{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 30px;
+}
+
+
+.tid{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.dynamic-island{
+    width: 130px;
+    height: 35px;
+    background-color: #000000;
+    border-radius: 30px;
+    margin-top: 8px;
+    display: flex;
+    align-self: center;   
+}
+
+
+.status-ikoner{
+    display: flex;
+    gap: 5px;
+    width: 18px;
+    margin-left: -25px;
+}
+
 
 .phone-page {
 	width: 100%;

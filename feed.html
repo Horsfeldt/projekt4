@@ -6,13 +6,32 @@
   <title>Feed</title>
   <link rel="stylesheet" href="stylesheet/feed.css">
   <link rel="stylesheet" href="stylesheet/index.css">
+  <script src="js/script.js" defer></script>
   <script src="js/feed.js" defer></script>
 </head>
 <body>
 <div class="phone-page">
   <header>
-    
-    <h1>Feed</h1>
+    <div class="statusbar">
+
+    <p class="tid">09:41</p>
+
+    <div class="dynamic-island"></div>
+
+    <div class="status-ikoner">
+
+        <img src="img/forbindelse-ikon.png">
+        <img src="img/wifi-ikon.png">
+        <img src="img/batteri-ikon.png">
+    </div>
+
+    </div>
+
+ 
+  </header>
+
+  <main>
+       <h1>Feed</h1>
     <div class="profile-row">
       <div class="profile">Karoline</div>
       <div class="profile">Jonas</div>
@@ -21,10 +40,7 @@
       <div class="profile">Pia</div>
       <div class="profile">Lara</div>
     </div>
-    <input type="text" placeholder="Søg efter opskrifter eller brugere">
-  </header>
-
-  <main>
+    <input type="text" placeholder="Søg efter opskrifter eller brugere"> </input>
     <div class="post">
       <div class="user">Rasmus</div>
       <img src="img/opskrift4.png" alt="Havregrød tærte med frugt">
@@ -67,7 +83,7 @@
 				</svg>
 			</a>
 
-			<a href="opskrifter.html" class="nav-item" aria-label="Fællesskab">
+			<a href="events.html" class="nav-item" aria-label="Fællesskab">
 				<svg viewBox="0 0 64 64" aria-hidden="true">
 					<circle cx="17" cy="17" r="9"/>
 					<circle cx="32" cy="13" r="10"/>
