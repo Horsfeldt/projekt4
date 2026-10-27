@@ -71,70 +71,19 @@ header {
   font-size: 14px;
 }
 
-
-.dynamic-island{
-    width: 130px;
-    height: 35px;
-    background-color: #000000;
-    border-radius: 30px;
-    margin-top: 8px;
-    display: flex;
-    align-self: center;   
-}
-
-
-.status-ikoner{
-    display: flex;
-    gap: 5px;
-    width: 18px;
-    margin-left: -25px;
-}
-
-
-
-
-
-.feed-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-
-}
-
-.feed-header h1 {
+h1 {
+  margin: 5px 0 10px 0;
   font-size: 22px;
-  margin: 0;
-  margin-left: 35px;
 }
-
-.header-ikoner{
-   margin-right: 20px;
-}
-
-.header-ikon{
-  width: 22px;
-}
-
-.header-ikon1{
-margin-left: 25px;
-}
-
 
 .profile-row {
   display: flex;
   justify-content: center;
+  gap: 8px;
   margin: 10px 0;
   flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 5px;
-  gap: 12px;
-}
- 
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .profile {
@@ -162,12 +111,10 @@ margin-left: 25px;
 }
 
 input[type="text"] {
-  width: 92%;
+  width: 85%;
   padding: 8px;
-  border: 1px solid #000000;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  margin-left: 16px;
-  margin-top: -5px;
 }
 
 main {
@@ -295,7 +242,6 @@ footer .footer-item:nth-child(4) img {
     height: 180px;
     border-radius: 6px;
   }
-
 
   .actions button {
     font-size: 16px;
