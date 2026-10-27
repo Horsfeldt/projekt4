@@ -10,26 +10,48 @@
   <script src="js/feed.js" defer></script>
 </head>
 <body>
-<div class="phone-page">
-  
-
-    <div class="statusbar">
-
+  <div class="statusbar">
     <p class="tid">09:41</p>
-
     <div class="dynamic-island"></div>
-
     <div class="status-ikoner">
-
-        <img src="img/forbindelse-ikon.png">
-        <img src="img/wifi-ikon.png">
-        <img src="img/batteri-ikon.png">
+      <img src="img/forbindelse-ikon.png" alt="">
+      <img src="img/wifi-ikon.png" alt="">
+      <img src="img/batteri-ikon.png" alt="">
     </div>
+  </div>
 
+  <header>
+    <span class="header-plus" role="img" aria-label="Tilføj">+</span>
+    <img class="header-heart" src="img/hjerte-ikon.png" alt="Favoritter">
+    <h1>Feed</h1>
+    <div class="profile-row">
+      <div class="profile">
+        <img src="img/profilbillede1.png" alt="">
+        <span>Karoline</span>
+      </div>
+      <div class="profile">
+        <img src="img/profilbillede2.png" alt="">
+        <span>Jonas</span>
+      </div>
+      <div class="profile">
+        <img src="img/profilbillede3.png" alt="">
+        <span>Simon</span>
+      </div>
+      <div class="profile">
+        <img src="img/profilbillede4.png" alt="">
+        <span>Emma</span>
+      </div>
+      <div class="profile">
+        <img src="img/profilbillede5.png" alt="">
+        <span>Freja</span>
+      </div>
+      <div class="profile">
+        <img src="img/profilbillede6.png" alt="">
+        <span>Lara</span>
+      </div>
     </div>
-
- 
-
+    <input type="text" aria-label="Søg efter opskrifter eller brugere" placeholder="Søg efter opskrifter eller brugere">
+  </header>
 
   <main>
 
@@ -92,11 +114,11 @@
 
     <div class="post">
       <div class="user">Rasmus</div>
-      <img src="img/opskrift4.png" alt="postbillede1">
+      <img src="img/madpandekager.png" alt="Madpandekager">
       <p>I dag har jeg lavet madpandekager af mine rester</p>
       <div class="actions">
-        <button class="like">👍</button>
-        <button>💬</button>
+        <button class="like" aria-label="Synes godt om">👍</button>
+        <button aria-label="Kommenter">💬</button>
       </div>
     </div>
 
@@ -105,17 +127,17 @@
       <img src="img/pasta-med-grøntsager2.png" alt="postbillede2">
       <p>Jeg har lavet pasta med ærterne! :)</p>
       <div class="actions">
-        <button class="like">👍</button>
-        <button>💬</button>
+        <button class="like" aria-label="Synes godt om">👍</button>
+        <button aria-label="Kommenter">💬</button>
       </div>
     </div>
 
     <div class="post">
       <div class="user">Veronica</div>
-      <img src="img/kylling-og-risret.png" alt="postbillede3">
+      <img src="img/lasagne.png" alt="Lasagne">
       <div class="actions">
-        <button class="like">👍</button>
-        <button>💬</button>
+        <button class="like" aria-label="Synes godt om">👍</button>
+        <button aria-label="Kommenter">💬</button>
       </div>
     </div>
   </main>
