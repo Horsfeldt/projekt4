@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feed</title>
-  <link rel="stylesheet" href="feed.css">
+  <link rel="stylesheet" href="stylesheet/feed.css">
+  <link rel="stylesheet" href="stylesheet/index.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/feed.js" defer></script>
 </head>
 <body>
   <div class="statusbar">
@@ -51,6 +54,64 @@
   </header>
 
   <main>
+
+    <div class="feed-header">
+     <img src="img/plus-ikon.png" class="header-ikon1">
+
+       <h1>Feed</h1>
+
+       <div class="header-ikoner">
+       <img src="img/besked-ikon.png" class="header-ikon2">
+       <img src="img/hjerte-ikon2.png" class="header-ikon3">
+
+       </div>
+</div>
+    <div class="profile-row">
+
+
+      <div class="profile">
+      <img src="img/pb1.png">
+      <p>Karoline</p>
+      </div>
+
+      <div class="profile">
+      <img src="img/pb2.png">
+      <p>Jonas</p>
+      </div>
+
+      <div class="profile">
+      <img src="img/pb3.png">
+      <p>Simon</p>
+      </div>
+
+      <div class="profile">
+      <img src="img/pb4.png">
+      <p>Emma</p>
+      </div>
+
+
+      <div class="profile">
+      <img src="img/pb5.png">
+      <p>Freja</p>  
+      </div>
+
+      <div class="profile">
+      <img src="img/pb6.png">
+       <p>Lara</p>
+      </div>
+
+    </div>
+
+    <div class="søg-feed">
+    <p>Søg i feedet</p>
+    </div>
+
+   
+
+
+    <input type="text" placeholder="Søg efter opskrifter eller brugere"> </input>
+
+
     <div class="post">
       <div class="user">Rasmus</div>
       <img src="img/madpandekager.png" alt="Madpandekager">
@@ -63,7 +124,7 @@
 
     <div class="post">
       <div class="user">Camilla</div>
-      <img src="img/pasta-med-grøntsager2.png" alt="Pasta med grøntsager">
+      <img src="img/pasta-med-grøntsager2.png" alt="postbillede2">
       <p>Jeg har lavet pasta med ærterne! :)</p>
       <div class="actions">
         <button class="like" aria-label="Synes godt om">👍</button>
@@ -80,15 +141,31 @@
       </div>
     </div>
   </main>
+			<nav class="bottom-nav" aria-label="Hovednavigation">
 
-   <footer>
-    <div class="footer-item"><img src="img/bundmenu1.png" alt="Billeder"></div>
-    <div class="footer-item"><img src="img/bundmenu2.png" alt="Brugere"></div>
-    <div class="footer-item"><img src="img/bundmenu3.png" alt="Indkøbskurv"></div>
-    <div class="footer-item"><img src="img/bundmenu4.png" alt="Opskrifter"></div>
-    <div class="footer-item"><img src="img/bundmenu5.png" alt="Profil"></div>
-  </footer>
+			<a href="feed.html" class="nav-item" aria-label="Billeder">
+				<img src="pictures/feedIconSort.png" alt="feed">
+			</a>
 
-  <script src="feed.js"></script>
+			<a href="events.html" class="nav-item" aria-label="Fællesskab">
+				<img src="pictures/eventIcon.png" alt="event">
+			</a>
+
+			<a href="reserver.html" class="nav-item" aria-label="Overskudsmad">
+				<img src="pictures/reserverIcon.png" alt="reserver">
+			</a>
+
+			<a href="opskrift.html" class="nav-item" aria-label="Opskrifter">
+				<img src="pictures/opskriftIconLys.png" alt="opskrift">
+			</a>
+
+			<a href="profil.html" class="nav-item" aria-label="Profil">
+				<img src="pictures/profilIcon.png" alt="profil">
+			</a>
+
+		</nav>
+  </div>
+   </div>
+
 </body>
 </html>

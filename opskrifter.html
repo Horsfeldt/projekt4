@@ -4,62 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favoritter</title>
-  <link rel="stylesheet" href="opskrifter.css">
+  <link rel="stylesheet" href="stylesheet/favoritOpskrifter.css">
+  <link rel="stylesheet" href="stylesheet/index.css">
+  <script src="js/opskrift.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
+  <div class = "phone-page">
+    <header>
+          <div class="statusbar">
+
+    <p class="tid">09:41</p>
+
+    <div class="dynamic-island"></div>
+
+    <div class="status-ikoner">
+
+        <img src="img/forbindelse-ikon.png">
+        <img src="img/wifi-ikon.png">
+        <img src="img/batteri-ikon.png">
+    </div>
     
-    <h1>Favoritter</h1>
-    <p class="subtitle">Brug dine rester</p>
-    <p class="subsubtitle">Dine favoritopskrifter</p>
-  </header>
+    </header>
 
-  <main>
-    <div class="card">
-      <img src="img/grøntsagssuppe.png" alt="Grøntsagssuppe">
-      <div class="card-info">
-        <p class="tag hurtig">Hurtig <span class="time-tag">15 MIN</span></p>
-        <h3>Grøntsagssuppe</h3>
-        <button class="btn">Vis opskrift</button>
+    <main>
+        <h1>Favoritter</h1>
+      <p class="subtitle">Brug dine rester</p>
+      <p class="subsubtitle">Dine favoritopskrifter</p>
+      <div class="card">
+        <img src="img/grøntsagssuppe.png" alt="Grøntsagssuppe">
+        <div class="card-info">
+          <p class="tag hurtig">Hurtig <span class="time-tag">15 MIN</span></p>
+          <h3>Grøntsagssuppe</h3>
+          <button class="btn">Vis opskrift</button>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/pasta-med-grøntsager.png" alt="Pasta med grøntsager">
-      <div class="card-info">
-        <p class="tag nem">Nem <span class="time-tag">20 MIN</span></p>
-        <h3>Pasta med grøntsager</h3>
-        <button class="btn">Vis opskrift</button>
+      <div class="card">
+        <img src="img/pasta-med-grøntsager.png" alt="Pasta med grøntsager">
+        <div class="card-info">
+          <p class="tag nem">Nem <span class="time-tag">20 MIN</span></p>
+          <h3>Pasta med grøntsager</h3>
+          <button class="btn">Vis opskrift</button>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/kylling-og-risret.png" alt="Kylling og risret">
-      <div class="card-info">
-        <p class="tag maettende">Mættende <span class="time-tag">25 MIN</span></p>
-        <h3>Kylling og risret</h3>
-        <button class="btn">Vis opskrift</button>
+      <div class="card">
+        <img src="img/kylling-og-risret.png" alt="Kylling og risret">
+        <div class="card-info">
+          <p class="tag maettende">Mættende <span class="time-tag">25 MIN</span></p>
+          <h3>Kylling og risret</h3>
+          <button class="btn">Vis opskrift</button>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/opskrift4.png" alt="Havregrød tærte med frugt">
-      <div class="card-info">
-        <p class="tag dessert">Dessert <span class="time-tag">30 MIN</span></p>
-        <h3>Havregrød tærte med frugt</h3>
-        <button class="btn">Vis opskrift</button>
+      <div class="card">
+        <img src="img/opskrift4.png" alt="Havregrød tærte med frugt">
+        <div class="card-info">
+          <p class="tag dessert">Dessert <span class="time-tag">30 MIN</span></p>
+          <h3>Havregrød tærte med frugt</h3>
+          <button class="btn">Vis opskrift</button>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-   <footer>
-    <div class="footer-item"><img src="img/bundmenu1.png" alt="Billeder"></div>
-    <div class="footer-item"><img src="img/bundmenu2.png" alt="Brugere"></div>
-    <div class="footer-item"><img src="img/bundmenu3.png" alt="Indkøbskurv"></div>
-    <div class="footer-item"><img src="img/bundmenu4.png" alt="Opskrifter"></div>
-    <div class="footer-item"><img src="img/bundmenu5.png" alt="Profil"></div>
-  </footer>
+ 					<nav class="bottom-nav" aria-label="Hovednavigation">
 
-  <script src="opskrift.js"></script>
+			<a href="feed.html" class="nav-item" aria-label="Billeder">
+				<img src="pictures/feedIkon.png" alt="feed">
+			</a>
+
+			<a href="events.html" class="nav-item" aria-label="Fællesskab">
+				<img src="pictures/eventIcon.png" alt="event">
+			</a>
+
+			<a href="reserver.html" class="nav-item" aria-label="Overskudsmad">
+				<img src="pictures/reserverIcon.png" alt="reserver">
+			</a>
+
+			<a href="opskrift.html" class="nav-item" aria-label="Opskrifter">
+				<img src="pictures/opskriftIcon.png" alt="opskrift">
+			</a>
+
+			<a href="profil.html" class="nav-item" aria-label="Profil">
+				<img src="pictures/profilIcon.png" alt="profil">
+			</a>
+
+		</nav>
+</div>
+  
 </body>
 </html>

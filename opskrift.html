@@ -6,8 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet/index.css">
     <link rel="stylesheet" href="stylesheet/opskrifter.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+<div class="phone-page">
+
+    <header>    <div class="statusbar">
+
+    <p class="tid">09:41</p>
+
+    <div class="dynamic-island"></div>
+
+    <div class="status-ikoner">
+
+        <img src="img/forbindelse-ikon.png">
+        <img src="img/wifi-ikon.png">
+        <img src="img/batteri-ikon.png">
+    </div></header>
+
     <h1 class="header" >Opskrifter til dine rester</h1>
 
     <div class="search-recipes">
@@ -49,16 +65,38 @@
             <div class="tekst">
                 <p> <span class="gul"> Dessert </span> <span class="rød">15 MIN</span> </p>
                 <p class="ret"> Chokoladekage</p>
+                <a href="opskriftDessert.html">
                 <button>Vis opskrift</button>
+                </a>
             </div>
         </div>
 
     </div>
 
-    <div class="footer">
-        
+			<nav class="bottom-nav" aria-label="Hovednavigation">
 
-    </div>
+			<a href="feed.html" class="nav-item" aria-label="Billeder">
+				<img src="pictures/feedIkon.png" alt="feed">
+			</a>
+
+			<a href="events.html" class="nav-item" aria-label="Fællesskab">
+				<img src="pictures/eventIcon.png" alt="event">
+			</a>
+
+			<a href="reserver.html" class="nav-item" aria-label="Overskudsmad">
+				<img src="pictures/reserverIcon.png" alt="reserver">
+			</a>
+
+			<a href="opskrift.html" class="nav-item" aria-label="Opskrifter">
+				<img src="pictures/opskriftIcon.png" alt="opskrift">
+			</a>
+
+			<a href="profil.html" class="nav-item" aria-label="Profil">
+				<img src="pictures/profilIcon.png" alt="profil">
+			</a>
+
+		</nav>
+</div>
     
 </body>
 </html>

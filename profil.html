@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/index.css">
     <script src="js/script.js" defer></script>
 </head>
 
 
 
 <body>
+<div class="phone-page">
 
-
-
-
-
+   
     <div class="statusbar">
 
-    <p class="tid">09:41</p>
+        <p class="tid">09:41</p>
 
-    <div class="dynamic-island"></div>
+        <div class="dynamic-island"></div>
 
-    <div class="status-ikoner">
+        <div class="status-ikoner">
 
-        <img src="img/forbindelse-ikon.png">
-        <img src="img/wifi-ikon.png">
-        <img src="img/batteri-ikon.png">
+            <img src="img/forbindelse-ikon.png">
+            <img src="img/wifi-ikon.png">
+            <img src="img/batteri-ikon.png">
+        </div>
     </div>
 
-    </div>
-    
 
 
     <div class="container">
@@ -111,7 +109,7 @@
     <div class="ret-billede">
 
         <img src="img/pasta-med-grøntsager2.png" class="ret2">
-        <p class="ret-navn">Pasta med grøntsager</p>
+        <p class="ret-navn">Pasta med <br> grøntsager</p>
         <button class="opskrift-btn">Vis opskrift</button>
 
     </div>
@@ -133,28 +131,29 @@
     </div>
 
 
-<nav class="bundmenu">
+			<nav class="bottom-nav" aria-label="Hovednavigation">
 
-    <a href="profil.html" class="menu-punkt">
-    <img src="img/bundmenu1.png" class="menu-ikon">
-    </a>    
+			<a href="feed.html" class="nav-item" aria-label="Billeder">
+				<img src="pictures/feedIkon.png" alt="feed">
+			</a>
 
-    <a href="profil.html" class="menu-punkt">
-    <img src="img/bundmenu2.png" class="menu-ikon">
-    </a>
+			<a href="events.html" class="nav-item" aria-label="Fællesskab">
+				<img src="pictures/eventIcon.png" alt="event">
+			</a>
 
-    <a href="profil.html" class="menu-punkt">
-    <img src="img/bundmenu3.png" class="menu-ikon">
-    </a>
+			<a href="reserver.html" class="nav-item" aria-label="Overskudsmad">
+				<img src="pictures/reserverIcon.png" alt="reserver">
+			</a>
 
-    <a href="profil.html" class="menu-punkt">
-    <img src="img/bundmenu4.png" class="menu-ikon">
-    </a>
+			<a href="opskrift.html" class="nav-item" aria-label="Opskrifter">
+				<img src="pictures/opskriftIconLys.png" alt="opskrift">
+			</a>
 
-    <a href="profil.html" class="menu-punkt">
-    <img src="img/bundmenu5.png" class="menu-ikon">
-    </a>
-</nav>
-    
+			<a href="profil.html" class="nav-item" aria-label="Profil">
+				<img src="pictures/profilIconSort.png" alt="profil">
+			</a>
+
+		</nav>
+  </div>  
 </body>
 </html>
