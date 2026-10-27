@@ -1,17 +1,30 @@
-/* --------- BASIS --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #faefc6;
   margin: 0;
-  padding-bottom: 90px;
+  min-height: 100vh;
+  padding-bottom: calc(92px + env(safe-area-inset-bottom));
+}
+
+body > *:not(footer) {
+  width: 100%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .statusbar {
   display: flex;
   align-items: center;
-  gap: 60px;
-  margin-left: 30px;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 16px;
 }
 
 .tid {
@@ -22,33 +35,36 @@ body {
 }
 
 .dynamic-island {
-  width: 130px;
-  height: 35px;
+  width: clamp(84px, 32vw, 130px);
+  height: clamp(24px, 8vw, 35px);
+  flex: 0 1 auto;
   background-color: #000;
   border-radius: 30px;
-  margin-top: 8px;
-  display: flex;
-  align-self: center;
 }
 
 .status-ikoner {
   display: flex;
   gap: 5px;
-  width: 18px;
-  margin-left: -25px;
+  flex: 0 0 auto;
+}
+
+.status-ikoner img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 header {
   position: relative;
   background-color: #faefc6;
   text-align: center;
-  padding: 10px;
+  padding: 10px 16px;
 }
 
 .header-heart {
   position: absolute;
   top: 10px;
-  right: 28px;
+  right: 16px;
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -57,7 +73,7 @@ header {
 .header-plus {
   position: absolute;
   top: 10px;
-  left: 28px;
+  left: 16px;
   color: #000;
   font-size: 30px;
   font-weight: 600;
@@ -78,16 +94,17 @@ h1 {
 
 .profile-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 8px;
   margin: 10px 0;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding-bottom: 5px;
+  padding: 0 2px 8px;
+  scrollbar-width: thin;
 }
 
 .profile {
-  flex: 0 0 58px;
+  flex: 0 0 clamp(52px, 13vw, 68px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,8 +113,8 @@ h1 {
 }
 
 .profile img {
-  width: 48px;
-  height: 48px;
+  width: clamp(44px, 11vw, 56px);
+  height: clamp(44px, 11vw, 56px);
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -111,27 +128,29 @@ h1 {
 }
 
 input[type="text"] {
-  width: 85%;
+  width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font: inherit;
 }
 
 main {
-  margin-top: 10px;
+  margin: 10px auto 0;
+  padding: 0 8px;
 }
 
 .post {
   background-color: #fff;
   border: 2px solid #438233;
   border-radius: 8px;
-  margin: 15px;
-  padding: 10px;
+  margin: 0 0 16px;
+  padding: clamp(8px, 3vw, 14px);
 }
 
 .post img {
   width: 100%;
-  height: 220px;
+  height: clamp(180px, 58vw, 320px);
   border-radius: 8px;
   object-fit: contain;
   display: block;
@@ -158,8 +177,11 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, 600px);
+  height: calc(68px + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
   box-sizing: border-box;
   background-color: #438233;
   display: flex;
@@ -183,7 +205,7 @@ footer .footer-item:last-child {
 
 footer img {
   width: auto;
-  height: 36px;
+  height: clamp(28px, 8vw, 36px);
   max-width: 100%;
   object-fit: contain;
 }
@@ -205,82 +227,22 @@ footer .footer-item:nth-child(4) img {
 }
 
 
-/* --------- RESPONSIVITET (MOBIL) --------- */
-
-@media (max-width: 480px) {
-
-  h1 {
-    font-size: 20px;
+@media (max-width: 360px) {
+  .statusbar {
+    gap: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 
-  .top-bar {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-
-  .profile {
-    flex-basis: 52px;
-  }
-
-  .profile img {
-    width: 44px;
-    height: 44px;
-  }
-
-  input[type="text"] {
-    width: 90%;
-    padding: 7px;
-    font-size: 14px;
-  }
-
-  .post {
-    margin: 10px;
-    padding: 8px;
+  .profile-row {
+    justify-content: flex-start;
   }
 
   .post img {
     height: 180px;
-    border-radius: 6px;
-  }
-
-  .actions button {
-    font-size: 16px;
   }
 
   footer {
-    font-size: 26px;
-  }
-}
-
-
-/* --------- LIDT STØRRE MOBIL (iPhone 12–15) --------- */
-
-@media (min-width: 481px) and (max-width: 768px) {
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .profile {
-    flex-basis: 62px;
-  }
-
-  .profile img {
-    width: 52px;
-    height: 52px;
-  }
-
-  input[type="text"] {
-    width: 80%;
-    font-size: 15px;
-  }
-
-  .post {
-    margin: 18px;
-    padding: 12px;
-  }
-
-  footer {
-    font-size: 28px;
+    height: calc(60px + env(safe-area-inset-bottom));
   }
 }
