@@ -1,5 +1,5 @@
 
-// Sender bruger til profilsiden efter login
+// Sender brugere til profilsiden efter login
 function login() {
     window.location.href= "profil.html";
 }
@@ -9,10 +9,12 @@ function goToOpret() {
     window.location.href= "opret.html";
 }
 
+// Sender brugere til feed-siden
 function opretBruger() {
     window.location.href= "feed.html";
 }
 
+// Senere brugere tilbage til logind-side
 function goToLogin() {
     window.location.href= "index.html";
 }
