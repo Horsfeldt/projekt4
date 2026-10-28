@@ -9,6 +9,13 @@ function goToOpret() {
     window.location.href= "opret.html";
 }
 
+function opretBruger() {
+    window.location.href= "feed.html";
+}
+
+function goToLogin() {
+    window.location.href= "index.html";
+}
 
 // Opdaterer tidpsunktet i statutbaren hvert sekund
 setInterval(() => {
