@@ -323,7 +323,7 @@ p {
     border: 3px solid #438233;
     border-radius: 18px;
     margin-top: 16px;
-    line-height: 1.5;
+    line-height: 1.4;
 
 
 }
@@ -343,8 +343,11 @@ p {
 .ommig-tekst{
     font-size: 12px;
     font-family: 'Open Sans';
+    text-align: left;
     margin-left: 8px;
-    margin-top: -4px;
+  
+  
+
 
 }
 
@@ -450,7 +453,8 @@ p {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 20px;
+
 }
 
 
