@@ -59,12 +59,15 @@ h1{
     font-size: 26px;
     font-family: 'Open Sans';
     margin-bottom: auto;
+   
 }
 
 p {
     margin-top: 10px;
     font-size: 18px;
     font-family: 'Open Sans';
+    text-align: center;
+   
 }
 
 
@@ -83,7 +86,7 @@ p {
     font-weight: 500;
     font-size: 14px;
     align-self: flex-start;
-    margin-left: 25px;
+    margin-left: 22px;
 }
 
 
