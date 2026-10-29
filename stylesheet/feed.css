@@ -6,53 +6,9 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #faefc6;
-  margin: 0;
-  min-height: 100vh;
-  padding-bottom: calc(92px + env(safe-area-inset-bottom));
 }
 
-body > *:not(footer) {
-  width: 100%;
-  max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.statusbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 4px 16px;
-}
-
-.tid {
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.dynamic-island {
-  width: clamp(84px, 32vw, 130px);
-  height: clamp(24px, 8vw, 35px);
-  flex: 0 1 auto;
-  background-color: #000;
-  border-radius: 30px;
-}
-
-.status-ikoner {
-  display: flex;
-  gap: 5px;
-  flex: 0 0 auto;
-}
-
-.status-ikoner img {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-}
 
 header {
   position: relative;
@@ -172,77 +128,4 @@ main {
   border: none;
   font-size: 18px;
   cursor: pointer;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(100%, 600px);
-  height: calc(68px + env(safe-area-inset-bottom));
-  padding-bottom: env(safe-area-inset-bottom);
-  box-sizing: border-box;
-  background-color: #438233;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 28px;
-}
-
-footer .footer-item {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #000;
-}
-
-footer .footer-item:last-child {
-  border-right: none;
-}
-
-footer img {
-  width: auto;
-  height: clamp(28px, 8vw, 36px);
-  max-width: 100%;
-  object-fit: contain;
-}
-
-footer .footer-item:nth-child(1) img {
-  transform: scale(1.667);
-}
-
-footer .footer-item:nth-child(2) img {
-  transform: scale(1.108);
-}
-
-footer .footer-item:nth-child(3) img {
-  transform: scale(0.814);
-}
-
-footer .footer-item:nth-child(4) img {
-  transform: scale(0.909);
-}
-
-
-@media (max-width: 360px) {
-  .statusbar {
-    gap: 8px;
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-
-  .profile-row {
-    justify-content: flex-start;
-  }
-
-  .post img {
-    height: 180px;
-  }
-
-  footer {
-    height: calc(60px + env(safe-area-inset-bottom));
-  }
 }
