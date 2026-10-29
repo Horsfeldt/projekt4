@@ -106,15 +106,22 @@ main {
 
 .post img {
   width: 100%;
-  height: clamp(180px, 58vw, 320px);
+  height: auto;
   border-radius: 8px;
   object-fit: contain;
   display: block;
 }
 
+.post p{
+  display: flex;
+  margin: 0 0 0 0;
+  text-align: start;
+}
+
 .user {
   font-weight: bold;
   margin-bottom: 5px;
+
 }
 
 .actions {
